@@ -60,7 +60,7 @@ abbr {
 	border-bottom: .05em solid;
 }
 
-#postDate, p.postAuthor {
+#postDate, .postAuthor {
 	font-style: italic;
 	font-size: 12pt;
 	margin: 0.3em 0px;
