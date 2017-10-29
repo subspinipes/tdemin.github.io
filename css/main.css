@@ -15,9 +15,11 @@ p {
 	line-height: 1.4;
 }
 
+pre.highlight {
+	background: #cacecf;
+}
 code {
 	font-family: 'Droid Sans Mono', 'Roboto Mono', monospace;
-	background: #cacecf;
 	color: #404040;
 	border-radius: 2px;
 	padding: 2px 3px;
