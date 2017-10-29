@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://tdemin.github.io">
+    <meta property="og:site_name" content="Timur Demin's Blog">
+    <meta property="og:title" content="A Few Reasons Why twtxt Is Going to Die">
+    <meta property="og:description" content="twtxt is a simple microblogging platform announced in 2016. It hasn't lived for long (just 1.5 years), but it already looks abandoned. Here's why it's going to eventually die.">
+    <meta name="description" content="twtxt is a simple microblogging platform announced in 2016. It hasn't lived for long (just 1.5 years), but it already looks abandoned. Here's why it's going to eventually die.">
+    <title>A Few Reasons Why twtxt Is Going to Die — Timur Demin's Blog</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/icons.min.css">
+    <link rel="canonical" href="/posts/2017-09-16-few-reasons-why-twtxt-is-dying">
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+    <script type="application/ld+json">
+      {
+      	"@context": "http://schema.org",
+      	"@type": "BlogPosting",
+      	"name": "Timur Demin's Blog",
+      	"url": "https://tdemin.github.io",
+      	"headline": "A Few Reasons Why twtxt Is Going to Die",
+      	"author": {
+      		"@type": "Person",
+      		"name": "Timur Demin"
+      	},
+      	"description": "twtxt is a simple microblogging platform announced in 2016. It hasn't lived for long (just 1.5 years), but it already looks abandoned. Here's why it's going to eventually die.",
+      	"datePublished": "2017-09-16 00:00:00 +0000",
+      	"publisher": {
+      		"@type": "Organization",
+      		"name": "Timur Demin's Blog",
+      		"logo": {
+      			"@type": "ImageObject",
+      			"url": "https://tdemin.github.io/img/logo.jpg"
+      		}
+      	},
+      	"mainEntityOfPage": {
+      		"@type": "WebPage",
+      		"@id": "/posts/2017-09-16-few-reasons-why-twtxt-is-dying"
+      	},
+      	"mainWebsite": {
+      		"@id": "https://tdemin.github.io",
+      		"@type": "WebSite",
+      		"name": "Timur Demin's Blog",
+      		"url": "https://tdemin.github.io"
+      	}
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>A Few Reasons Why twtxt Is Going to Die</h2>
+      <p><span class="icon-date"></span> <time id="postDate" datetime="2017-09-16">September 16, 2017</time></p>
+      <p><span class="icon-author"></span> <span class="postAuthor">Timur Demin</span></p>
+    </header>
+    <nav>
+    </nav>
+    <article>
+      <p>So, the Ripper is now going for twtxt.</p>
+      <p>twtxt, at its core, is an amazingly simple microblogging platform. Its idea is
+        to blog by simply appending lines to a publicly available text file hosted
+        somewhere on the Internet. Simple is better, you know? Even the author of this
+        post <a href="/blog.txt" title="@tdemin on twtxt">used to use</a> twtxt for microblogging.</p>
+      <p>Despite its total simplicity, the population of twtxt is slowly disappearing.
+        There are <a href="https://enotty.dk/we-are-twtxt.txt">3 latest additions vs 6 latest deletions</a>
+        (starting with me) on the <a href="https://github.com/mdom/we-are-twtxt">we-are-twtxt</a> register, and now there
+        are just 45 guys on the list, only 10 of which occasionally tweet nowadays. 
+        Looks like a dusk for twtxt.</p>
+      <p>I think I have the points, why is this going on.</p>
+      <h3 id="point-1-the-process-of-discovering-existing-users">Point #1, the process of discovering existing users</h3>
+      <p>As far as twtxt doc only specifies the file format for text-based microblogging,
+        it misses lots of important things, and the first one on the list is the users
+        discovery process.</p>
+      <p>You may say, “Ha! It’s easy to provide folks with a link on my site!”, but…
+        exactly, you’d probably be the only one who thinks about this. Yes, just three
+        <abbr title="FYI, it's me, @c-keen and @freemor">folks</abbr> from the top 10
+        active users on twtxt have published a link pointing to their microblog file on
+        their sites, and <em>those links are yet to be found</em> by a newcomer.</p>
+      <p>There is a public <a href="https://github.com/mdom/we-are-twtxt">registry</a> for twtxt, but the existence of such
+        a registry just makes the <em>process of discovery being very hard</em> evident.</p>
+      <p>The other side of the discovery being hard is the technical one. RSS/Atom feeds
+        are standartized formats that are pointed to by the webpages with a special tag:</p>
+      <div class="highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code>&lt;link rel="alternate" type="application/atom+xml" href="atom.xml"&gt;
+</code></pre>
+        </div>
+      </div>
+      <p><span class="contentComment">Example Atom feed link</span></p>
+      <p>This makes discovering the feeds by search engines and news readers very easy
+        and streamlined, as you just enter the site URL into your favorite news reader
+        app and a news feed is instantly found.</p>
+      <p>What can twtxt oppose RSS or Atom with? <em>Nothing</em>. There just isn’t a standard
+        way to find a twtxt microblog for a crawler.</p>
+      <p>So, the only way to find guys on twtxt is a special registry. Magnificent, it’s
+        already hard to use for a new guy.</p>
+      <h3 id="point-2-the-quality-of-apps-suggested-for-end-users">Point #2, the quality of apps suggested for end users</h3>
+      <p>Let’s imagine ourselves as we were a newcomer starting twtxt for the first time
+        (I’m now speaking of the <a href="https://github.com/buckket/twtxt">initial program</a> by buckket). What command
+        shall we issue at first? Right, it’s <code class="highlighter-rouge">twtxt quickstart</code>.</p>
+      <p>When we get to the file location chooser, we might want to store our twtxt files
+        in a new non-existent directory (I like <code class="highlighter-rouge">~/.local/share/twtxt</code>, but you are free
+        to choose whatever you want). What will twtxt respond with? Right, with a crash.
+        Nice, we’ve just started an app, and it already began crashing on quickstart.</p>
+      <p>BTW, this bug <a href="https://github.com/buckket/twtxt/commit/c1bbd6aa7f059a9382ea149528baeb05579ef019">was fixed</a>, but a version with that fix was never
+        released, so <em>a newbie will end up installing the program with critical bugs</em>.
+        Isn’t this awesome?</p>
+      <p>I haven’t checked other apps, but I’m sure there are bugs, lots of them. Can’t
+        even imagine what would break in an average twtxt client if an official one
+        fails on creating a directory for the twtxt file.</p>
+      <h3 id="point-3-the-process-of-signing-up">Point #3, the process of signing up</h3>
+      <p>There actually isn’t one. Signing up is as easy as creating a publicly available
+        text file, that’s the biggest point of twtxt. But, well, <em>how do we exactly</em>
+        <em>make a file available to anyone on the Internet</em>?</p>
+      <p>We have a few variants to achieve this:</p>
+      <ul>
+        <li>Hosting a file on something like GitHub Pages. We’ll have to sign up for
+          GitHub first, create a repo, push our file… did I miss “learning how to work
+          with Git”? Yeah, that was an extraordinary simple one (is this sentence even
+          ironic?).</li>
+        <li>Hosting a file on a free hosting site. We’ll have to sign up on a site, learn
+          how to work with FTP… damn it, that’s too hard again.</li>
+        <li>Placing a file in <a href="https://ipfs.io" title="A distributed file system">IPFS</a> or <a href="https://keybase.io" title="A promising web service. Provides some nice capabilities for PGP and its KBFS">KBFS</a>. Requires some madskillz
+          for installation and usage.</li>
+      </ul>
+      <p>Three variants (I’m sure there are others, just not sure what are those), all of
+        which require to install something odd, learn to work with that something odd…
+        in other words, do those complex geeky things nobody wants to actually do.</p>
+      <p><em>An extra layer of complex actions required just to sign up won’t attract</em>
+        <em>anyone</em>. Just those with super powers would pass.</p>
+      <h3 id="point-4-and-the-most-obvious-one-the-population-of-twtxt">Point #4, and the most obvious one: the population of twtxt</h3>
+      <p>OK, so we’ve come across the buggy apps and imported the we-are-twtxt registry
+        into some app. What are we going to read now?</p>
+      <p>Did I say only those who have super powers (i.e. geeks, techies, etc) would use
+        twtxt? This is perfectly right, there aren’t any categories of people not
+        falling into the ones listed above. So, the <em>timeline is flooded with the</em>
+        <em>things not interesting to an average user</em>—just things like decentralization,
+        software, technology and stuff are discussed on twtxt. Hello? There are many
+        more topics to discuss!</p>
+      <h3 id="the-conclusion">The conclusion</h3>
+      <p>twtxt is not accessible for most users due to its complexity hiding in its
+        simplicity (this looks rather strange, but it’s true). Its population is already
+        dwindling, so the entire network is going to die after some time, even though
+        twtxt is just 1.5 years old.</p>
+      <p>It’s a pity, but it’s true.</p>
+    </article>
+    <footer>
+      <hr />
+      <p id="licenseNotice">
+        <span class="icon-cc"></span>
+        © Timur Demin, 2017<br>
+        Except where otherwise noted, content on this site is licensed under Creative Commons Attribution 4.0 International License.
+        See <a href="/licenses">this page</a> for details.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* Specific overrides for translations pages */
+
+/*
+header > h2 { margin-bottom: 0px !important; }
+header > h3 { margin-top: 0px !important; }
+*/
+
+p#originalComment {
+	font-style: italic !important;
+}

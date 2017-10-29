@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Timur Demin's Blog</title>
+    <subtitle>Random stuff belonging to Timur Demin</subtitle>
+    <link rel="self" href="https://tdemin.github.io/atom.xml" />
+    <link href="https://tdemin.github.io" />
+    <id>https://tdemin.github.io</id>
+    <updated>2017-10-29T12:38:00+00:00</updated>
+    <entry>
+      <title>Инструкция по созданию возобновляемого токена двухфакторной аутентификации</title>
+      <link href="https://tdemin.github.io/posts/2017-10-27-recoverable-2fa_ru" />
+      <id>https://tdemin.github.io/posts/2017-10-27-recoverable-2fa_ru</id>
+      <updated>2017-10-27T00:00:00+00:00</updated>
+      <summary>Большая часть систем двухфакторной аутентификации не позволяет делать резервное копирование ключей из-за потенциальных проблем с безопасностью. Тем не менее, сделать это можно, причем безопасно!</summary>
+      <author>
+        <name>Тимур Демин</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Recoverable Two-Factor Authentication Token HOWTO</title>
+      <link href="https://tdemin.github.io/posts/2017-10-27-recoverable-2fa" />
+      <id>https://tdemin.github.io/posts/2017-10-27-recoverable-2fa</id>
+      <updated>2017-10-27T00:00:00+00:00</updated>
+      <summary>Most two-factor authentication setups won't allow you to back up your keys. There is actually a method to do so without harming the security of your accounts. Here's how.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>A Few Reasons Why twtxt Is Going to Die</title>
+      <link href="https://tdemin.github.io/posts/2017-09-16-few-reasons-why-twtxt-is-dying" />
+      <id>https://tdemin.github.io/posts/2017-09-16-few-reasons-why-twtxt-is-dying</id>
+      <updated>2017-09-16T00:00:00+00:00</updated>
+      <summary>twtxt is a simple microblogging platform announced in 2016. It hasn't lived for long (just 1.5 years), but it already looks abandoned. Here's why it's going to eventually die.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Updating the Secure Messaging Scorecard—Features Are a Must</title>
+      <link href="https://tdemin.github.io/posts/2017-08-29-updating-the-secure-messaging-scorecard" />
+      <id>https://tdemin.github.io/posts/2017-08-29-updating-the-secure-messaging-scorecard</id>
+      <updated>2017-08-29T00:00:00+00:00</updated>
+      <summary>The previous version of the Secure Messaging Scorecard didn't include the features comparison, while the most common of them, like voice calls, are already a must for a messenger. This updated version tries to add that missing comparison.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Не используйте сервисы VPN</title>
+      <link href="https://tdemin.github.io/posts/2017-08-13-dont-use-vpn-services_ru" />
+      <id>https://tdemin.github.io/posts/2017-08-13-dont-use-vpn-services_ru</id>
+      <updated>2017-08-13T00:00:00+00:00</updated>
+      <summary>Перевод статьи Don't use VPN services за авторством Свена Слутвега (Sven Slootweg). Суть сервисов VPN в формате вопрос-ответ.</summary>
+      <author>
+        <name>Тимур Демин</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Releasing the Secure Messaging Scorecard</title>
+      <link href="https://tdemin.github.io/posts/2017-07-28-releasing-the-secure-messaging-scorecard" />
+      <id>https://tdemin.github.io/posts/2017-07-28-releasing-the-secure-messaging-scorecard</id>
+      <updated>2017-07-28T00:00:00+00:00</updated>
+      <summary>The scorecard is meant to compare the secure messengers and decide, which ones are good for security and which aren't.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Telegram и безопасные коммуникации</title>
+      <link href="https://tdemin.github.io/posts/2017-07-05-telegram-and-secure-messaging_ru" />
+      <id>https://tdemin.github.io/posts/2017-07-05-telegram-and-secure-messaging_ru</id>
+      <updated>2017-07-05T00:00:00+00:00</updated>
+      <summary>Люди из Telegram заявляют, что их мессенджер безопасен и прекрасен для приватности. Так ли это на самом деле?</summary>
+      <author>
+        <name>Тимур Демин</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Telegram and Secure Messaging</title>
+      <link href="https://tdemin.github.io/posts/2017-07-05-telegram-and-secure-messaging" />
+      <id>https://tdemin.github.io/posts/2017-07-05-telegram-and-secure-messaging</id>
+      <updated>2017-07-05T00:00:00+00:00</updated>
+      <summary>The promotionals say Telegram is a secure messenger. Let's look a bit closer and decide, is it ready for secure messaging or not.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Don't Tap the Bell!</title>
+      <link href="https://tdemin.github.io/posts/2017-06-22-dont-tap-the-bell" />
+      <id>https://tdemin.github.io/posts/2017-06-22-dont-tap-the-bell</id>
+      <updated>2017-06-22T00:00:00+00:00</updated>
+      <summary>If you see YouTube channel owners begging you to 'tap the bell', don't do it. Here's why.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Как поддержка легаси убивает удобство в децентрализованных сетях</title>
+      <link href="https://tdemin.github.io/posts/2017-06-07-legacy-and-ux_ru" />
+      <id>https://tdemin.github.io/posts/2017-06-07-legacy-and-ux_ru</id>
+      <updated>2017-06-07T00:00:00+00:00</updated>
+      <summary>Мокси Марлинспайк (Moxie Marlinspike) однажды сказал, что задержка развития федеративных сетей заложена в их же природе. Проблема ли это самих сетей? Не лежат ли причины этого глубже?</summary>
+      <author>
+        <name>Тимур Демин</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>How Legacy Compatibility Kills User Experience in Decentralized Environments</title>
+      <link href="https://tdemin.github.io/posts/2017-06-07-legacy-and-ux" />
+      <id>https://tdemin.github.io/posts/2017-06-07-legacy-and-ux</id>
+      <updated>2017-06-07T00:00:00+00:00</updated>
+      <summary>Moxie Marlinspike once said this is the nature of federated networks of being stuck in time. Is it the problem of the protocols, or is the problem underlying somewhere deeper?</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Linux on Windows Store—Is It Really Good for Linux on Desktop?</title>
+      <link href="https://tdemin.github.io/posts/2017-05-24-linux-on-windows-store" />
+      <id>https://tdemin.github.io/posts/2017-05-24-linux-on-windows-store</id>
+      <updated>2017-05-24T00:00:00+00:00</updated>
+      <summary>Why the future of desktop Linux might be questionable after Ubuntu on Windows Store release.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+    <entry>
+      <title>Migrating from Google, or The Hard Way Out</title>
+      <link href="https://tdemin.github.io/posts/2017-05-21-migrating-from-google" />
+      <id>https://tdemin.github.io/posts/2017-05-21-migrating-from-google</id>
+      <updated>2017-05-21T00:00:00+00:00</updated>
+      <summary>I've never thought it would be so hard to leave a proprietary ecosystem... Here's why it is.</summary>
+      <author>
+        <name>Timur Demin</name>
+        <email>demintimur@gmail.com</email>
+      </author>
+    </entry>
+  </feed>

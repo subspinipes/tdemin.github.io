@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://tdemin.github.io">
+    <meta property="og:site_name" content="Timur Demin's Blog">
+    <meta property="og:title" content="How Legacy Compatibility Kills User Experience in Decentralized Environments">
+    <meta property="og:description" content="Moxie Marlinspike once said this is the nature of federated networks of being stuck in time. Is it the problem of the protocols, or is the problem underlying somewhere deeper?">
+    <meta name="description" content="Moxie Marlinspike once said this is the nature of federated networks of being stuck in time. Is it the problem of the protocols, or is the problem underlying somewhere deeper?">
+    <title>How Legacy Compatibility Kills User Experience in Decentralized Environments — Timur Demin's Blog</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/icons.min.css">
+    <link rel="canonical" href="/posts/2017-06-07-legacy-and-ux">
+    <link rel="alternate" hreflang="ru" href="/posts/2017-06-07-legacy-and-ux_ru">
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+    <script type="application/ld+json">
+      {
+      	"@context": "http://schema.org",
+      	"@type": "BlogPosting",
+      	"name": "Timur Demin's Blog",
+      	"url": "https://tdemin.github.io",
+      	"headline": "How Legacy Compatibility Kills User Experience in Decentralized Environments",
+      	"author": {
+      		"@type": "Person",
+      		"name": "Timur Demin"
+      	},
+      	"description": "Moxie Marlinspike once said this is the nature of federated networks of being stuck in time. Is it the problem of the protocols, or is the problem underlying somewhere deeper?",
+      	"datePublished": "2017-06-07 00:00:00 +0000",
+      	"publisher": {
+      		"@type": "Organization",
+      		"name": "Timur Demin's Blog",
+      		"logo": {
+      			"@type": "ImageObject",
+      			"url": "https://tdemin.github.io/img/logo.jpg"
+      		}
+      	},
+      	"mainEntityOfPage": {
+      		"@type": "WebPage",
+      		"@id": "/posts/2017-06-07-legacy-and-ux"
+      	},
+      	"mainWebsite": {
+      		"@id": "https://tdemin.github.io",
+      		"@type": "WebSite",
+      		"name": "Timur Demin's Blog",
+      		"url": "https://tdemin.github.io"
+      	}
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>How Legacy Compatibility Kills User Experience in Decentralized Environments</h2>
+      <p><span class="icon-date"></span> <time id="postDate" datetime="2017-06-07">June 7, 2017</time></p>
+      <p><span class="icon-author"></span> <span class="postAuthor">Timur Demin</span></p>
+    </header>
+    <nav>
+    </nav>
+    <article>
+      <p>Preserving compatibility with legacy products has always been a PITA. The
+        developers who preserve compatibility with other products sometimes notice they
+        cannot implement feature X because it breaks Y for some users.</p>
+      <p>It is less problematic for those who provide a centralized service with some
+        client software to use the service with. Sometimes such services even deny
+        alternate clients or software because it would break things for other users
+        (e.g. <a href="https://github.com/LibreSignal/LibreSignal">LibreSignal</a>, a deblobbed variant of Signal private
+        messenger, was stopped due to Moxie’s disagreement of LibreSignal’s usage of
+        Signal servers). Moxie Marlinspike, head of <a href="https://whispersystems.org/">Open Whisper Systems</a>, the
+        Signal developers, has even written <a href="https://whispersystems.org/blog/the-ecosystem-is-moving/" title="The Ecosystem Is Moving">an article</a> stating
+        his opinion on user experience in decentralized environments or the environments
+        where alternative clients are enabled.</p>
+      <blockquote>
+        <p>Indeed, cannibalizing a federated application-layer protocol into a
+          centralized service is almost a sure recipe for a successful consumer product
+          today. It’s what Slack did with IRC, what Facebook did with email, and what
+          WhatsApp has done with XMPP. In each case, the federated service is stuck in
+          time, while the centralized service is able to iterate into the modern world and
+          beyond.</p>
+      </blockquote>
+      <p>Daniel Gultsch, the head developer of another instant messaging client,
+        <a href="https://conversations.im/">Conversations</a>, has <a href="https://gultsch.de/objection.html" title="An Objection to ‘The ecosystem is moving’">replied</a> to Moxie’s post stating
+        <em>the biggest problem of federated networks</em> and their user experience is not
+        them being stuck in time, but the <em>lack of developers</em> able to maintain
+        user-friendly IM solutions.</p>
+      <blockquote>
+        <p>Instead the most frequent reason new features don’t get implement is a lack of
+          resources. The majority of end-user-facing XMPP implementations are developed by
+          people in their spare time.</p>
+      </blockquote>
+      <p>The lack of manpower is surely a problem for the federated systems as they do
+        not always receive as much attention as they really need. But, well, <em>is the</em>
+        <em>lack of manpower really the biggest problem</em> of the federated solutions?</p>
+      <h3 id="a-look-at-xmpp">A look at XMPP</h3>
+      <p><a href="https://xmpp.org/" title="Extensible Messaging and Presence Protocol">XMPP</a>, the protocol mentioned in both articles, is complete with its
+        extensions, so-called <abbr title="XMPP Extension Protocols">XEPs</abbr>. The
+        number of extensions present nowadays is pretty overwhelming: there are ≈
+        <a href="https://xmpp.org/extensions/index.html">400 extensions</a> reviewed by XSF. Those extent the protocol with features
+        you see in modern messengers: sending files, retrieving message archive, etc.</p>
+      <p>An ideal server/client should probably support most extensions that are
+        up-to-date and which are useful. But the number of XMPP extensions is really
+        big, so the most urgent ones are implemented first.</p>
+      <p>Those protocol extensions are written at the time they are needed. An average
+        extension which was a big technological advance yesterday could become obsolete
+        in a few years, so as it became with a bunch of current XMPP extensions like
+        XEP-0136.</p>
+      <p>XMPP users somehow adopted the way being stuck in time, and most clients that
+        are present include the archaisms like chat tabs (even the most up-to-date
+        mobile XMPP client, Conversations, still uses that tabs concept), while modern
+        messengers like WhatsApp and Telegram just show the chats list, none of which is
+        hidden until the message history is expunged. Some of the actively used clients
+        still don’t even support message syncing between online clients (i.e. Tkabber),
+        not to mention “advanced” extensions like session resumption or message
+        corrections. However, those clients are still used and are even recommended by
+        some.</p>
+      <p>Those archaisms are actively supported by the users
+        (<a href="https://github.com/Vacuum-IM/vacuum-im/issues/864#issuecomment-139908478">this GitHub thread</a> would probably explain things better than
+        me: a legacy server user is protecting his beloved XEP-0136, which is already
+        dropped by the two major XMPP server software bundles: Prosody and ejabberd due
+        to its difficulty to maintain). And these <em>archaisms are stopping</em> not only 
+        <em>the clients to develop</em>, but the modern way of <em>user experience</em>, which is not
+        adopted due to the old users’ demands.</p>
+      <blockquote>
+        <p>I think we have much more important tasks than implementing experimental XEPs.</p>
+      </blockquote>
+      <p><span class="contentComment">@yagiza on GitHub</span></p>
+      <p>Getting not enough manpower isn’t the only big XMPP problem. Another of its
+        <em>big problems</em> is <em>its users</em>, who are freezing the clients development because
+        of their beloved old client/server not supporting new features.</p>
+      <h3 id="another-glance-at-riot">Another glance at Riot</h3>
+      <p><a href="https://riot.im">Riot</a>, an instant messaging client built on top of <a href="https://matrix.org">Matrix</a>, 
+        which is promoted by many as an alternative to Slack and XMPP both, is slowly
+        starting to face the same problem from the rear side.</p>
+      <p>One of the best things about Riot is its idea to be a <em>shared workplace for the</em>
+        <em>web</em>. Riot integrates with XMPP, Slack and IRC by using special bridges
+        attached to the channels. The drawback is, those bridges are meant just to
+        connect people from various networks, so they don’t provide new Matrix features.
+        Those bridges not only render advanced Riot features like multi-device
+        end-to-end encryption unusable, they break things for other participants: <em>no</em>
+        <em>one can even say an IRC bridge user is online or not</em>, and I didn’t even
+        mention things like read receipts et al.</p>
+      <p><img src="https://imgs.xkcd.com/comics/team_chat.png" alt="XKCD #1782: Team Chat" title="XKCD #1782: Team Chat" /></p>
+      <p><span class="contentComment">XKCD #1782</span></p>
+      <p>There are still lots of people who use IRC, so some Matrix/Riot rooms are mostly
+        accessed by IRC bridges users. However, you need only one IRC user in the room
+        to break advanced Riot features for other users and render chats the same way it
+        was in XMPP, just in a glossy new client.</p>
+      <p>Riot is another example where the decentralization and freedom of choice just
+        render awesome features unusable due to them being inaccessible to alternate
+        clients users.</p>
+      <p><span class="contentHighlight">
+          This is not the decentralization nature of federated networks who buries them.
+          This is not the lack of manpower who buries the protocols and the networks.
+          Those who are responsible for considering their protocol dead are the users themselves.
+        </span></p>
+      <p>No one is responsible for making your instant messaging solution dead, but it’s
+        just you. Think of it when you try to support that old legacy client built in
+        2006 just because you know many guys who still use it.</p>
+    </article>
+    <footer>
+      <hr />
+      <p id="licenseNotice">
+        <span class="icon-cc"></span>
+        © Timur Demin, 2017<br>
+        Except where otherwise noted, content on this site is licensed under Creative Commons Attribution 4.0 International License.
+        See <a href="/licenses">this page</a> for details.
+      </p>
+    </footer>
+  </body>
+</html>
