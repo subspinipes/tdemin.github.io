@@ -21,6 +21,7 @@ pre.highlight {
 code {
 	font-family: 'Droid Sans Mono', 'Roboto Mono', monospace;
 	color: #404040;
+	background: #cacecf;
 	border-radius: 2px;
 	padding: 2px 3px;
 	margin-left: 2px;
